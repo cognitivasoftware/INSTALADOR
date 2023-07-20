@@ -165,7 +165,7 @@ get_alter_backend_port() {
 
 get_urls() {
   get_mysql_root_password
-  get_deploy_email()
+  get_deploy_email
   get_link_git
   get_instancia_add
   get_max_whats
@@ -223,8 +223,8 @@ inquiry_options() {
 
   case "${option}" in
     0) get_urls 
-	
-	exit;;
+	exit
+	;;
 
     1) 
       software_update 
