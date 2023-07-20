@@ -8,6 +8,14 @@ get_mysql_root_password() {
   read -p "> " mysql_root_password
 }
 
+get_deploy_email() {
+  
+  print_banner
+  printf "${WHITE} 💻 Insira um emil valido para o cerficado ssl:${GRAY_LIGHT}"
+  printf "\n\n"
+  read -p "> " deploy_email
+}
+
 get_link_git() {
   
   print_banner
@@ -157,6 +165,7 @@ get_alter_backend_port() {
 
 get_urls() {
   get_mysql_root_password
+  get_deploy_email()
   get_link_git
   get_instancia_add
   get_max_whats
