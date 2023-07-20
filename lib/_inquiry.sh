@@ -222,9 +222,7 @@ inquiry_options() {
   read -p "> " option
 
   case "${option}" in
-    0) get_urls 
-	exit
-	;;
+    0) get_urls ;;
 
     1) 
       software_update 
